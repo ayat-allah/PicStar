@@ -1,0 +1,202 @@
+body{
+    overflow-x: hidden;
+}
+p{
+    font-size: 27px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*font*/
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+/*container div*/
+.con{
+    display: flex;
+    gap: 2px;
+    width: auto;
+    text-align: center;
+}
+/*important colors: #EB1B59 (redish) #6B3EF9 (bluish) #FE3FC3 (pinkish) #B711ED (purplish)*/
+/*navigation bar*/
+.nav{
+    top: 0px;
+    margin: -30px 0px -30px -30px;
+    flex-wrap: wrap;
+    flex: 0 0 25%;
+    height: 700px;
+    position: sticky;
+    text-align: center;
+}
+.sections{
+    background-color: white;
+    height: 10%;
+    flex: 0 0 100%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+}
+.sections:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.sections img{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+#name{
+    height: 20%;
+    margin-top: -35px;
+    border: none;
+}
+#name:hover{
+    cursor: context-menu;
+    background-color: white;
+}
+/*posts*/
+.posts{
+    flex: 0 0 60%;
+}
+/*put a post*/
+#story{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: none;
+    padding-left: 28%;
+}
+html body .con .posts .profile.personal{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+html body .con .posts .profile.personal:hover{
+    border-bottom: 5px solid gray;
+}
+/*profiles*/
+.profile{
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.profile img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.diamond{
+    color: gray;
+}
+/*for liking posts, writing a comment or sharing posts*/
+.react{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.react:hover{
+    cursor: pointer;
+}
+.like:focus{
+    color: red;
+}
+.comment:focus{
+    color: #005b96;
+}
+.share:focus{
+    color: green;
+}
+/*the actual posts*/
+img{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+/*learn more button*/
+#lm{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+#lm a:hover{
+    color: white;
+}
+#lm:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+/*footer*/
+.sidefooter{
+    top: 0px;
+    flex: 0 0 17.5%;
+    overflow: hidden;
+    height: 705px;
+    position: sticky;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    background-image: linear-gradient(to bottom, #525252, #8c8c8c);
+}
+/*media query for tablet*/
+@media (max-width: 600px) and (min-width: 401px) {
+    .ad{
+        display: none;
+    }
+    iframe{
+        display: none;
+    }
+    .posts{
+        flex: 0 0 75%;
+    }
+}
+/*media query for mobile*/
+@media (max-width: 400px) {
+    .ad{
+        display: none;
+    }
+    iframe{
+        display: none;
+    }
+    .posts{
+        margin-top: 40px;
+        flex: 0 0 100%;
+        margin-left: -10px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        margin-left: -10px;
+        flex-wrap: nowrap;
+        flex: 0 0 100%;
+    }
+    .nav div{
+        height: 100%;
+        flex: 0 0 25%;
+    }
+    .con{
+        flex-wrap: wrap;
+    }
+}
