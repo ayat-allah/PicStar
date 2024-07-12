@@ -231,13 +231,7 @@ p {
 }
 
 @media(max-width:768px) {
-    .videos {
-        margin-top: 20%;
-        width: 100%;
-        margin-left: -126%;
-        margin-right: -5%;
-    }
-
+    
     .video-container,
     .video-container1,
     .video-container2,
@@ -351,7 +345,7 @@ p {
     .videos {
         margin-top: 20%;
         width: 100%;
-        margin-left: -130%;
+        margin-left: -125%;
     }
 
     .circle img {
