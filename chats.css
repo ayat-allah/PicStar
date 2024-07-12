@@ -1,0 +1,249 @@
+* {
+
+    font-family: serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*font*/
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*container div*/
+.con {
+    display: flex;
+    gap: 2px;
+    width: auto;
+    text-align: center;
+}
+
+/*important colors: #EB1B59 (redish) #6B3EF9 (bluish) #FE3FC3 (pinkish) #B711ED (purplish)*/
+/*navigation bar*/
+.nav {
+    top: 0px;
+    margin: -30px 0px -30px -30px;
+    flex-wrap: wrap;
+    flex: 0 0 25%;
+    height: 700px;
+    position: sticky;
+    text-align: center;
+}
+
+.sections {
+    background-color: white;
+    height: 10%;
+    flex: 0 0 100%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.sections:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.sections img {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+#name {
+    height: 20%;
+    margin-top: -35px;
+    border: none;
+}
+
+#name:hover {
+    cursor: context-menu;
+    background-color: white;
+}
+
+/*footer*/
+.sidefooter {
+    top: 0px;
+    flex: 0 0 17.5%;
+    overflow: hidden;
+    height: 705px;
+    position: sticky;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    background-image: linear-gradient(to bottom, #525252, #8c8c8c);
+}
+
+.aya {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
+
+.users-stories {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+}
+
+.users-stories img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    border: 2px solid #fff;
+    background: linear-gradient(rgb(144, 211, 144), rgb(226, 134, 226));
+    cursor: pointer;
+}
+
+.users-stories figure {
+    margin: 0 1em 0 0;
+    align-items: center;
+}
+
+.users-stories figcaption {
+    align-items: center;
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    margin-left: -2%;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+}
+
+.talking {
+    display: flex;
+    cursor: pointer;
+    height: 75px;
+}
+
+.talking :hover {
+    background-color: #a5a4a4;
+}
+
+.talking img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.talking span {
+    font-size: medium;
+    margin-left: 5px;
+
+}
+
+.talking h5 {
+    font-size: 16px;
+    color: #333;
+}
+
+.talking h4 {
+    font-size: 20px;
+    right: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 400px) {
+    .sidefooter {
+        display: none;
+    }
+
+    .posts {
+        margin-top: 40px;
+        flex: 0 0 100%;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        z-index: 200;
+        left: 20px;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+
+    .sections {
+        height: 50px;
+        flex-basis: 20%;
+        font-size: 15px;
+        background-color: transparent;
+    }
+
+    #name {
+        flex-basis: 100%;
+        height: 100px;
+    }
+
+    .personal {
+        top: 40px;
+    }
+
+    .con {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .aya {
+        margin-top: 30%;
+    }
+
+    .space {
+        height: 20px;
+    }
+
+    .material-symbols-outlined {
+        position: absolute;
+        margin-bottom: 10%;
+    }
+
+    figcaption {
+        display: none;
+    }
+
+    .users-stories {
+        height: 70px;
+        width: 400px;
+    }
+
+    .users-stories img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .talking {
+        height: 80px;
+    }
+
+    .talking h5 {
+        margin-bottom: 90px;
+    }
+}
