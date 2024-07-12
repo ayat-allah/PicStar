@@ -32,6 +32,12 @@
             <h3>Have account? <a href="log.html">log in</a></h3>
         </form>
     </div>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents the default form submission
+            window.location.href = "home.html"; // Local page to redirect to
+        });
+    </script>
 </body>
 
 </html>
