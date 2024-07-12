@@ -1,0 +1,419 @@
+body{
+    overflow-x: hidden;
+}
+p{
+    font-size: 27px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    top: -2%;
+    left: 40%;
+}
+.diamond{
+    color: gray;
+}
+/*font*/
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+/*container div*/
+.con{
+    display: flex;
+    gap: 2px;
+    width: auto;
+    text-align: center;
+}
+/*navigation bar*/
+.nav{
+    top: 0px;
+    margin: -30px 0px -30px -30px;
+    flex-wrap: wrap;
+    flex: 0 0 25%;
+    height: 700px;
+    position: sticky;
+    text-align: center;
+}
+.sections{
+    background-color: white;
+    height: 10%;
+    flex: 0 0 100%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+}
+.sections:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.sections img{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+#name{
+    height: 20%;
+    margin-top: -35px;
+    border: none;
+}
+#name:hover{
+    cursor: context-menu;
+    background-color: white;
+}
+/*pust a story / post page*/
+.post_story{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-left: 2px solid #005b96;
+    border-right: 2px solid #005b96;
+    border-bottom: 2px solid #005b96;
+    border-top: 80px solid #005b96;
+    border-radius: 20px;
+    width: 60%;
+    margin-top: 0px;
+}
+/*the pics on the users device*/
+.pic{
+    flex-basis: 32.5%;
+    margin-top: 2px;
+    border: none;
+    height: 400px;
+    background-image: linear-gradient(to top left, rgb(251, 23, 61) 30%,
+    rgb(43, 28, 201) 70%);
+}
+.pic:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+#starryNight:hover ~ .top.left, #drawing:hover ~ .top.center, #handwork:hover ~ .top.right,
+#pool:hover ~ .middle.left, #bush:hover ~ .middle.center, #cat:hover ~ .middle.right,
+#fufu:hover ~ .bottom.left, #pizza:hover ~ .bottom.center, #dessert:hover ~ .bottom.right{
+    background-color: rgb(210, 208, 208);
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#fufu{
+    border-bottom-left-radius: 20px !important;
+}
+#dessert{
+    border-bottom-right-radius: 20px !important;
+}
+#fufu img{
+    border-bottom-left-radius: 20px !important;
+}
+#dessert img{
+    border-bottom-right-radius: 20px !important;
+}
+/*selection buttons*/
+.btn{
+    display: flex;
+    position: absolute;
+    height: 30px;
+    font-size: 20px;
+    width: 75px;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.top{
+    top: 280px;
+}
+.middle{
+    top: 680px;
+}
+.bottom{
+    top: 1080px;
+}
+.left{
+    left: 360px;
+}
+.center{
+    left: 660px;
+}
+.right{
+    right: 300px;
+}
+.top.left:focus ~ .pic, .top.middle:focus ~ .pic, .top.right:focus ~ .pic,
+.middle.left:focus ~ .pic, .middle.middle:focus ~ .pic, .middle.right:focus ~ .pic,
+.bottom.left:focus ~ .pic, .bottom.middle:focus ~ .pic, .bottom.right:focus ~ .pic
+#noFilter:focus ~ .post > .pic, #BW:focus ~ .post > .pic, #inverse:focus ~ .post > .pic, #PB:focus ~ .post > .pic{
+    display: none !important;
+}
+/*hiding selection button*/
+.top.left:focus, #noFilter:focus ~ .top.left, #BW:focus ~ .top.left, #inverse:focus ~ .top.left, #PB:focus ~ .top.left,
+.top.center:focus, #noFilter:focus ~ .top.center, #BW:focus ~ .top.center, #inverse:focus ~ .top.center, #PB:focus ~ .top.center,
+.top.right:focus, #noFilter:focus ~ .top.right, #BW:focus ~ .top.right, #inverse:focus ~ .top.right, #PB:focus ~ .top.right
+.middle.left:focus, #noFilter:focus ~ .middle.left, #BW:focus ~ .middle.left, #inverse:focus ~ .middle.left, #PB:focus ~ .middle.left,
+.middle.center:focus, #noFilter:focus ~ .middle.center, #BW:focus ~ .middle.center, #inverse:focus ~ .middle.center, #PB:focus ~ .middle.center,
+.middle.right:focus, #noFilter:focus ~ .middle.right, #BW:focus ~ .middle.right, #inverse:focus ~ .middle.right, #PB:focus ~ .middle.right,
+.bottom.left:focus, #noFilter:focus ~ .bottom.left, #BW:focus ~ .bottom.left, #inverse:focus ~ .bottom.left, #PB:focus ~ .bottom.left,
+.bottom.center:focus, #noFilter:focus ~ .bottom.center, #BW:focus ~ .bottom.center, #inverse:focus ~ .bottom.center, #PB:focus ~ .bottom.center,
+.bottom.right:focus, #noFilter:focus ~ .bottom.right, #BW:focus ~ .bottom.right, #inverse:focus ~ .bottom.right, #PB:focus ~ .bottom.right{
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    cursor: context-menu;
+}
+/*selected pic settings*/
+.top.left:focus ~ #starryNight, #noFilter:focus ~ #starryNight, #BW:focus ~ #starryNight, #inverse:focus ~ #starryNight, #PB:focus ~ #starryNight,
+.top.center:focus ~ #drawing, #noFilter:focus ~ #drawing, #BW:focus ~ #drawing, #inverse:focus ~ #drawing, #PB:focus ~ #drawing,
+.top.right:focus ~ #handwork, #noFilter:focus ~ #handwork, #BW:focus ~ #handwork, #inverse:focus ~ #handwork, #PB:focus ~ #handwork,
+.middle.left:focus ~ #pool, #noFilter:focus ~ #pool, #BW:focus ~ #pool, #inverse:focus ~ #pool, #PB:focus ~ #pool,
+.middle.center:focus ~ #bush, #noFilter:focus ~ #bush, #BW:focus ~ #bush, #inverse:focus ~ #bush, #PB:focus ~ #bush,
+.middle.right:focus ~ #cat, #noFilter:focus ~ #cat, #BW:focus ~ #cat, #inverse:focus ~ #cat, #PB:focus ~ #cat,
+.bottom.left:focus ~ #fufu, #noFilter:focus ~ #fufu, #BW:focus ~ #fufu, #inverse:focus ~ #fufu, #PB:focus ~ #fufu,
+.bottom.center:focus ~ #pizza, #noFilter:focus ~ #pizza, #BW:focus ~ #pizza, #inverse:focus ~ #pizza, #PB:focus ~ #pizza,
+.bottom.right:focus ~ #dessert, #noFilter:focus ~ #dessert, #BW:focus ~ #dessert, #inverse:focus ~ #dessert, #PB:focus ~ #dessert{
+    display: flex;
+    position: relative;
+    height: 550px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/*filter buttons*/
+.filter{
+    display: flex;
+    flex-basis: 0%;
+    width: 0px;
+    height: 0px;
+    order: -1;
+    cursor: context-menu;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    left: 35%;
+    gap: 50px;
+}
+.filters{
+    display: none;
+    width: 100px !important;
+    height: 100px !important;
+    border: 2px solid black !important;
+    color: black !important;
+    border-radius: 50%;
+}
+.filters:hover{
+    cursor: pointer;
+}
+/*filter div settings*/
+.post_story:has(> .top.left:focus) ~ .filter, .post_story:has(> .top.center:focus) ~ .filter, .post_story:has(> .top.right:focus) ~ .filter,
+.post_story:has(> .middle.left:focus) ~ .filter, .post_story:has(> .middle.center:focus) ~ .filter, .post_story:has(> .middle.right:focus) ~ .filter,
+.post_story:has(> .bottom.left:focus) ~ .filter, .post_story:has(> .bottom.center:focus) ~ .filter, .post_story:has(> .bottom.right:focus) ~ .filter,
+.filter:has(> #noFilter:focus), .filter:has(> #BW:focus), .filter:has(> #inverse:focus), .filter:has(> #PB:focus){
+    flex-basis: 100% !important;
+    border: 5px solid black !important;
+    color: black !important;
+    border-radius: 20px;
+}
+.post_story:has(> .top.left:focus) ~ .filter > .filters, .post_story:has(> .top.center:focus) ~ .filter > .filters, .post_story:has(> .top.right:focus) ~ .filter > .filters,
+.post_story:has(> .middle.left:focus) ~ .filter > .filters, .post_story:has(> .middle.center:focus) ~ .filter > .filters, .post_story:has(> .middle.right:focus) ~ .filter > .filters,
+.post_story:has(> .bottom.left:focus) ~ .filter > .filters, .post_story:has(> .bottom.center:focus) ~ .filter > .filters, .post_story:has(> .bottom.right:focus) ~ .filter > .filters,
+.filter:has(> #noFilter:focus) > .filters, .filter:has(> #BW:focus) > .filters, .filter:has(> #inverse:focus) > .filters, .filter:has(> #PB:focus) > .filters{
+    display: flex !important;
+}
+/*no filter button settings*/
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#starryNight,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#drawing,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#handwork,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#pool,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#bush,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#cat,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#fufu,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#pizza,
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#dessert{
+    display: flex;
+    order: -1;
+    filter: none !important;
+}
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#fufu{
+    border-bottom-left-radius: 0px;
+}
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#dessert{
+    border-bottom-right-radius: 0px;
+}
+/*black and white button settings*/
+#BW{
+    background-image: radial-gradient(black, white) !important;
+}
+html body .filter:has(> #BW:focus) ~ div.post_story > div#starryNight,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#drawing,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#handwork,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#pool,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#bush,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#cat,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#fufu,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#pizza,
+html body .filter:has(> #BW:focus) ~ div.post_story > div#dessert{
+    display: flex;
+    order: -1;
+    filter: grayscale(100%) !important;
+}
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#fufu{
+    border-bottom-left-radius: 0px;
+}
+html body .filter:has(> #noFilter:focus) ~ div.post_story > div#dessert{
+    border-bottom-right-radius: 0px;
+}
+/*inverted colors button settings*/
+#inverse{
+    background-image: radial-gradient(white, black) !important;
+}
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#starryNight,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#drawing,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#handwork,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#pool,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#bush,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#cat,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#fufu,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#pizza,
+html body .filter:has(> #inverse:focus) ~ div.post_story > div#dessert{
+    display: flex;
+    order: -1;
+    filter: invert(100%) !important;
+}
+/*pink and blue overlay button settings*/
+#PB{
+    background-image: radial-gradient(lightblue, pink) !important;
+}
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#starryNight > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#drawing > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#handwork > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#pool > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#bush > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#cat > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#fufu > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#pizza > img,
+html body .filter:has(> button#PB:focus) ~ div.post_story > div#dessert > img{
+    display: flex;
+    order: -1;
+    filter: saturate(100%);
+    opacity: 0.7 !important;
+}
+/*verifying / deselecting pic for post / story*/
+#ok, #deselect{
+    display: none;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    font-size: 0px;
+}
+#ok:hover, #deselect:hover{
+    cursor: pointer;
+}
+.top.left:focus ~ #ok, .top.center:focus ~ #ok, .top.right:focus ~ #ok,
+.middle.left:focus ~ #ok, .middle.center:focus ~ #ok, .middle.right:focus ~ #ok,
+.bottom.left:focus ~ #ok, .bottom.center:focus ~ #ok, .bottom.right:focus ~ #ok,
+#noFilter:focus ~ #ok #BW:focus ~ #ok, #inverse:focus ~ #ok, #PB:focus ~ #ok,
+.top.left:focus ~ #deselect, .top.center:focus ~ #deselect, .top.right:focus ~ #deselect,
+.middle.left:focus ~ #deselect, .middle.center:focus ~ #deselect, .middle.right:focus ~ #deselect,
+.bottom.left:focus ~ #deselect, .bottom.center:focus ~ #deselect, .bottom.right:focus ~ #deselect,
+#noFilter:focus ~ #deselectm #BW:focus ~ #deselect, #inverse:focus ~ #deselect, #PB:focus ~ #deselect{
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    bottom: 0px;
+}
+/*footer*/
+.sidefooter{
+    top: 0px;
+    flex: 0 0 17.5%;
+    overflow: hidden;
+    height: 705px;
+    position: sticky;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    background-image: linear-gradient(to bottom, #525252, #8c8c8c);
+}
+/*media query for tablet*/
+@media (max-width: 600px) and (min-width: 401px) {
+    .sidefooter{
+        display: none;
+    }
+    .post_story{
+        flex: 0 0 75%;
+    }
+}
+/*media query for mobile*/
+@media (max-width: 400px) {
+    h1{
+        font-size: 40px;
+        margin-top: 240px;
+        left: 10%;
+    }
+    .sidefooter{
+        display: none;
+    }
+    .post_story{
+        margin-top: 60px;
+        flex: 0 0 100%;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        z-index: 200;
+        left: 20px;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+    .sections{
+        height: 50px;
+        flex-basis: 20%;
+        font-size: 15px;
+        background-color: white;
+    }
+    #name{
+        flex-basis: 100%;
+        height: 100px;
+    }
+    .con{
+        flex-wrap: wrap;
+    }
+    #fufu{
+        border-bottom-left-radius: 0px;
+    }
+    #dessert{
+        border-bottom-right-radius: 0px;
+    }
+    #fufu img{
+        border-bottom-left-radius: 0px;
+    }
+    #dessert img{
+        border-bottom-right-radius: 0px;
+    }
+}
