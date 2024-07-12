@@ -67,7 +67,6 @@ a{
     border: none;
 }
 #name:hover{
-    cursor: context-menu;
     background-color: white;
 }
 /*posts*/
