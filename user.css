@@ -41,7 +41,7 @@ a {
     margin: -30px 0px -30px -30px;
     flex-wrap: wrap;
     flex: 0 0 25%;
-    height: 700px;
+    height: 650px;
     position: sticky;
     text-align: center;
 }
@@ -155,9 +155,7 @@ button {
 .discover {
     display: grid;
     grid-template-columns: repeat(5, 130px);
-    /* Creates three equal-width columns */
     gap: 15px;
-    /* Adjust spacing between boxes */
 }
 
 .user1,
@@ -188,97 +186,68 @@ button {
 .discover {
     display: flex;
     overflow-x: auto;
-    /* Enable horizontal scrolling on smaller screens */
     gap: 1px;
-    /* Adjust spacing between user cards */
     padding: 10px;
-    /* Add padding to the container */
-
 }
 
 .user1 {
     flex: 0 0 auto;
-    /* Ensure each card doesn't grow or shrink */
     width: 250px;
-    /* Fixed width for each user card */
     padding: 10px;
-    /* Padding around each user card */
     text-align: center;
 }
 
 .user1 img {
     max-width: 100%;
-    /* Ensure images don't exceed the width of their container */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .user2 {
     flex: 0 0 auto;
-    /* Ensure each card doesn't grow or shrink */
-    width: 250px;
-    /* Fixed width for each user card */
+    width: 250px;/
     padding: 10px;
-    /* Padding around each user card */
     text-align: center;
 }
 
 .user2 img {
     max-width: 100%;
-    /* Ensure images don't exceed the width of their container */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .user3 {
     flex: 0 0 auto;
-    /* Ensure each card doesn't grow or shrink */
-    width: 250px;
-    /* Fixed width for each user card */
+    width: 250px;/
     padding: 10px;
-    /* Padding around each user card */
     text-align: center;
 }
 
 .user3 img {
-    max-width: 100%;
-    /* Ensure images don't exceed the width of their container */
+    max-width: 100%;/
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .user4 {
     flex: 0 0 auto;
-    /* Ensure each card doesn't grow or shrink */
     width: 250px;
-    /* Fixed width for each user card */
     padding: 10px;
-    /* Padding around each user card */
     text-align: center;
 }
 
 .user4 img {
     max-width: 100%;
-    /* Ensure images don't exceed the width of their container */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .user5 {
     flex: 0 0 auto;
-    /* Ensure each card doesn't grow or shrink */
     width: 250px;
-    /* Fixed width for each user card */
     padding: 10px;
-    /* Padding around each user card */
     text-align: center;
 }
 
 .user5 img {
     max-width: 100%;
-    /* Ensure images don't exceed the width of their container */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .nav11 {
