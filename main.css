@@ -170,12 +170,13 @@ img{
     .nav{
         display: flex;
         flex-direction: row;
-        height: 150px;
+        height: 200px;
         flex-wrap: wrap;
         flex: 0 0 100%;
         z-index: 200;
         left: 20px;
         justify-content: space-evenly;
+        background-color: white;
     }
     .sections{
         height: 50px;
