@@ -244,6 +244,14 @@ a {
     }
 
     .talking h5 {
+        font-size: 9px;
+        color: #333;
         margin-bottom: 90px;
+    }
+
+    .talking h4 {
+        font-size: 13px;
+        right: 0;
+        margin-right: 0;
     }
 }
