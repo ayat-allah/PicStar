@@ -158,43 +158,34 @@ img{
     margin-top: -30px;
     margin-bottom: -30px;
     background-image: linear-gradient(to bottom, #525252, #8c8c8c);
-}
-/*media query for tablet*/
-@media (max-width: 600px) and (min-width: 401px) {
-    .ad{
-        display: none;
-    }
-    iframe{
-        display: none;
-    }
-    .posts{
-        flex: 0 0 75%;
-    }
-}
-/*media query for mobile*/
+}/*media query for mobile*/
 @media (max-width: 400px) {
-    .ad{
-        display: none;
-    }
-    iframe{
+    .sidefooter{
         display: none;
     }
     .posts{
         margin-top: 40px;
         flex: 0 0 100%;
-        margin-left: -10px;
     }
     .nav{
         display: flex;
         flex-direction: row;
         height: 50px;
-        margin-left: -10px;
         flex-wrap: nowrap;
         flex: 0 0 100%;
+        z-index: 200;
     }
-    .nav div{
+    .sections{
         height: 100%;
-        flex: 0 0 25%;
+        flex: 0 0 20%;
+        font-size: 20px;
+        background-color: white;
+    }
+    #name{
+        display: none;
+    }
+    .personal{
+        top: 40px;
     }
     .con{
         flex-wrap: wrap;
