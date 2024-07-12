@@ -3,7 +3,6 @@
     font-family: serif;
 }
 
-
 a {
     text-decoration: none;
     color: black;
@@ -203,7 +202,6 @@ button {
 
 .nav11 h4 {
     background-color: black;
-
     cursor: pointer;
     display: inline;
 }
@@ -239,27 +237,8 @@ button {
     display: flex;
 }
 
-.user {
-    padding: 10px;
-    text-align: center;
-    flex: 0 0 auto;
-    width: 130px;
-    margin-right: 15px;
-    background-color: black;
-}
-
-.user img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    /* Ensure the image covers the 50x50 space */
-    border-radius: 50%;
-    /* Optional: Make the image round */
-}
-
 .stories {
     position: relative;
-
 }
 
 .story img {
@@ -270,17 +249,6 @@ button {
     position: absolute;
     cursor: pointer;
 }
-
-.story h5 {
-    position: absolute;
-    /* Position text relative to .story */
-    background-color: transparent;
-    color: white;
-    margin-top: 30px;
-    z-index: 2;
-    font-size: x-small;
-}
-
 @media (max-width: 400px) {
     .aya {
         margin-top: 20%;
@@ -385,10 +353,6 @@ button {
         margin-top: 31%;
     }
 
-    .postss img {
-        height: 300px;
-    }
-
     .nav11 span {
         height: 1px;
         width: 1px;
@@ -466,10 +430,6 @@ button {
 
     .nav11 {
         margin-top: 45%;
-    }
-
-    .postss img {
-        height: 300px;
     }
 
     .nav11 span {
