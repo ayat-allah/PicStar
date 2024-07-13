@@ -204,10 +204,6 @@ img{
         top: 40px;
         left: -80px;
     }
-    a ~ img{
-        position: relative;
-        left: -25px;
-    }
     .con{
         flex-wrap: wrap;
     }
