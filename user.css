@@ -204,7 +204,7 @@ button {
 
 .user2 {
     flex: 0 0 auto;
-    width: 250px;/
+    width: 250px;
     padding: 10px;
     text-align: center;
 }
@@ -216,13 +216,13 @@ button {
 
 .user3 {
     flex: 0 0 auto;
-    width: 250px;/
+    width: 250px;
     padding: 10px;
     text-align: center;
 }
 
 .user3 img {
-    max-width: 100%;/
+    max-width: 100%;
     height: auto;
 }
 
