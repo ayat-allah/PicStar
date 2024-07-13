@@ -243,7 +243,7 @@ html body .filter:has(> button#PB:focus) ~ div.post_story > div#dessert > img{
 /*media query for mobile*/
 @media (max-width: 400px) {
     h1{
-        font-size: 35px;
+        font-size: 25px;
         margin-top: 240px;
         left: 17%;
     }
