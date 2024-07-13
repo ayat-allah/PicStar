@@ -234,12 +234,11 @@ html body .filter:has(> button#PB:focus) ~ div.post_story > div#dessert > img{
     position: fixed;
     left: 40%;
     top: 30%;
-    border: 20px dotted black;
     border-top: 20px dotted #6B3EF9;
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    animation: progress 20s ease-in-out infinite;
+    animation: progress 17s ease-in-out infinite;
 }
 @keyframes progress{
     0%, 12.5%{
@@ -247,31 +246,49 @@ html body .filter:has(> button#PB:focus) ~ div.post_story > div#dessert > img{
     }
     12.5%, 25%{
         transform: rotate(2turn);
-        border-right: 20px dotted #B711ED;
+        border-top: 20px dotted #B711ED;
+        border-right: 20px dotted #6B3EF9;
     }
     25%, 37.5%{
         transform: rotate(3turn);
-        border-bottom: 20px dotted #19816b;
+        border-top: 20px dotted #19816b;
+        border-right: 20px dotted #B711ED;
+        border-bottom: 20px dotted #6B3EF9;
     }
     37.5%, 50%{
         transform: rotate(4turn);
-        border-left: 20px dotted #93C572;
+        border-top: 20px dotted #93C572;
+        border-right: 20px dotted #19816b;
+        border-bottom: 20px dotted #B711ED;
+        border-left: 20px dotted #6B3EF9;
     }
     50%, 62.5%{
         transform: rotate(5turn);
-        border-top: transparent;
+        border-left: transparent;
+        border-top: 20px dotted #19816b;
+        border-right: 20px dotted #B711ED;
+        border-bottom: 20px dotted #6B3EF9;
     }
     62.5%, 75%{
         transform: rotate(6turn);
-        border-right: transparent;
+        border-left: transparent;
+        border-bottom: transparent;
+        border-top: 20px dotted #B711ED;
+        border-right: 20px dotted #6B3EF9;
     }
     75%, 87.5%{
         transform: rotate(7turn);
+        border-left: transparent;
         border-bottom: transparent;
+        border-right: transparent;
+        border-top: 20px dotted #6B3EF9;
     }
     87.5%, 100%{
         transform: rotate(8turn);
         border-left: transparent;
+        border-bottom: transparent;
+        border-right: transparent;
+        border-top: transparent;
     }
 }
 #load i{
