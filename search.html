@@ -13,7 +13,7 @@
     <body>
         <div class="con">
             <div class="nav">
-                <div class="sections" id="name"><img src="PicStar.jpeg"></div>
+                <div class="sections" id="name"><a href="log.html"><img src="PicStar.jpeg"></a></div>
                 <a class="libre-baskerville-bold" href="home.html"><div class="sections"><i class="fas fa-home"></i> Home</div></a>
                 <a class="libre-baskerville-bold" href="videos.html"><div class="sections"><i class="fas fa-film"></i> Reels</div></a>
                 <a class="libre-baskerville-bold" href="search.html"><div class="sections"><i class="fas fa-search"></i> Search</div></a>
@@ -21,45 +21,52 @@
                 <a class="libre-baskerville-bold" href="user.html"><div class="sections"><i class="fas fa-user-alt"></i> Profile</div></a>
             </div>
             <div class="search">
-                <input class="lookUp" type="search" minlength="1"/><button class="lookFor libre-baskerville-regular">Enter</button>
-                <button class="result one libre-baskerville-regular"><i class="fas fa-history"></i>user1</button>
-                <button class="result two libre-baskerville-regular"><i class="fas fa-history"></i>user2</button>
-                <button class="result three libre-baskerville-regular"><i class="fas fa-history"></i>user3</button>
-                <button class="result four libre-baskerville-regular"><i class="fas fa-history"></i>Ahmed Elsayed</button>
-                <button class="result four libre-baskerville-regular"><i class="fas fa-history"></i>Nada Elsayed</button>
-                <button class="result four libre-baskerville-regular"><i class="fas fa-history"></i>R. Elsayed</button>
+                <input class="lookUp" type="search" minlength="1" onclick="look()"/><button class="lookFor libre-baskerville-regular" onclick="look()">Enter</button>
+                <div id="results">
+                    <button id="first" class="result libre-baskerville-regular" onclick="search(this)"><i class="fas fa-history"></i>Nada Elsayed</button>
+                    <button id="second" class="result libre-baskerville-regular" onclick="search(this)"><i class="fas fa-history"></i>Omar Elshazly</button>
+                    <button id="third" class="result libre-baskerville-regular" onclick="search(this)"><i class="fas fa-history"></i>R. Elsayed</button>
+                    <button id="mohammed" class="result libre-baskerville-regular" onclick="search(this)"><i class="fas fa-history"></i>Mohamed Sobhy</button>
+                    <button id="four" class="result libre-baskerville-regular" onclick="search(this)"><i class="fas fa-history"></i>Mona Elshazly</button>
+                    <button id="five" class="result libre-baskerville-regular" onclick="search(this)"><i class="fas fa-history"></i>S. Elshazly</button>
+                    <button id="six" class="result libre-baskerville-regular" onclick="search(this)"><i class="fas fa-history"></i>Ahmed Elsayed</button>
+                </div>
                 <h1 class="libre-baskerville-bold">Profiles:</h1>
-                <div class="Persons first"><a href="test.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/firstUserPfp.jpeg"> <span class="diamond">&#9830;</span> user1</a></div>
-                <div class="Persons second"><a href="test.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/secondUserPfp.jpeg"> <span class="diamond">&#9830;</span> user2</a></div>
-                <div class="Persons third"><a href="test.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/thirdUserPfp.jpeg"> <span class="diamond">&#9830;</span> user3</a></div>
-                <div class="Persons fourth"><a href="test.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/AhmedElsayed.jpg"> <span class="diamond">&#9830;</span> Ahmed Elsayed</a></div>
-                <div class="Persons fourth"><a href="test.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/NadaElsayed.jpeg"> <span class="diamond">&#9830;</span> Nada Elsayed</a></div>
-                <div class="Persons fourth"><a href="test.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/R.E.jpg"> <span class="diamond">&#9830;</span> R. Elsayed</a></div>
+                <div class="first Persons"><a href="friend1.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/NadaElsayed.jpeg"> <span class="diamond">&#9830;</span> Nada Elsayed</a></div>
+                <div class="second Persons"><a href="friend.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/thirdUserPfp.jpeg"> <span class="diamond">&#9830;</span> Omar Elshazly</a></div>
+                <div class="third Persons"><a href="friend2.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/R.E.jpg"> <span class="diamond">&#9830;</span> R. Elsayed</a></div>
+                <div class="mohammed Persons"><a href="mo.html" title="go to user's profile" class="libre-baskerville-bold"><img src="results/moPfp.jpeg"> <span class="diamond">&#9830;</span> mohamedsobhy3348</a></div>
+                <div class="four Persons libre-baskerville-bold"><img src="results/firstUserPfp.jpeg" title="user's profile"> <span class="diamond">&#9830;</span> Mona Elshazly</div>
+                <div class="five Persons libre-baskerville-bold"><img src="results/secondUserPfp.jpeg" title="user's profile"> <span class="diamond">&#9830;</span> S. Elshazly</div>
+                <div class="six Persons libre-baskerville-bold"><img src="results/AhmedElsayed.jpg" title="user's profile"> <span class="diamond">&#9830;</span> Ahmed Elsayed</div>
                 <h1 class="libre-baskerville-bold">Posts:</h1>
-                <img class="user1" src="results/firstUser1.jpeg">
-                <img class="user1" src="results/firstUser2.jpeg">
-                <img class="user1" src="results/firstUser3.jpeg">
-                <img class="user1" src="results/firstUser4.jpeg">
-                <img class="user1" src="results/firstUser5.jpeg">
-                <img class="user1" src="results/firstUser6.jpeg">
-                <img class="user2" src="results/secondUser1.jpeg">
-                <img class="user2" src="results/secondUser2.jpeg">
-                <img class="user2" src="results/secondUser3.jpeg">
-                <img class="user2" src="results/secondUser4.jpeg">
-                <img class="user2" src="results/secondUser5.jpeg">
-                <img class="user2" src="results/secondUser6.jpeg">
-                <img class="user3" src="results/thirdUser1.jpeg">
-                <img class="user3" src="results/thirdUser2.jpeg">
-                <img class="user3" src="results/thirdUser3.jpeg">
-                <img class="user3" src="results/thirdUser4.jpeg">
-                <img class="user3" src="results/thirdUser5.jpeg">
-                <img class="user3" src="results/thirdUser6.jpeg">
-                <img class="mohammed" src="Ghost.png">
-                <img class="mohammed" src="PicstarFinalLogo.png">
-                <img class="mohammed" src="Ghost.png">
-                <img class="mohammed" src="Ghost.png">
-                <img class="mohammed" src="IMG20240324093830.jpg">
-                <img class="mohammed" src="Ghost.png">
+                <img class="first user" src="results/firstUser1.jpeg">
+                <img class="first user" src="results/firstUser2.jpeg">
+                <img class="first user" src="results/firstUser3.jpeg">
+                <img class="first user" src="results/firstUser4.jpeg">
+                <img class="first user" src="results/firstUser5.jpeg">
+                <img class="first user" src="results/firstUser6.jpeg">
+                <img class="second user" src="results/secondUser1.jpeg">
+                <img class="second user" src="results/secondUser2.jpeg">
+                <img class="second user" src="results/secondUser3.jpeg">
+                <img class="second user" src="results/secondUser4.jpeg">
+                <img class="second user" src="results/secondUser5.jpeg">
+                <img class="second user" src="results/secondUser6.jpeg">
+                <img class="third user" src="results/thirdUser1.jpeg">
+                <img class="third user" src="results/thirdUser2.jpeg">
+                <img class="third user" src="results/thirdUser3.jpeg">
+                <img class="third user" src="results/thirdUser4.jpeg">
+                <img class="third user" src="results/thirdUser5.jpeg">
+                <img class="third user" src="results/thirdUser6.jpeg">
+                <img class="mohammed user" src="results/mo1.PNG">
+                <img class="mohammed user" src="results/mo2.PNG">
+                <img class="mohammed user" src="results/mo3.PNG">
+                <img class="mohammed user" src="results/mo4.PNG">
+                <img class="mohammed user" src="results/mo5.PNG">
+                <img class="mohammed user" src="results/mo6.PNG">
+                <div class="four user"><p class="libre-baskerville-regular">no posts uploaded</p></div>
+                <div class="five user"><p class="libre-baskerville-regular">no posts uploaded</p></div>
+                <div class="six user"><p class="libre-baskerville-regular">no posts uploaded</p></div>
                 <!--I need to figure out how to move the svg as a whole rocket and how to make it do that after the animation is over, the results show up-->
             </div>
             <footer class="sidefooter"><p class="libre-baskerville-regular"><strong><u>CONTACT US:</u></strong><br><i class="fas fa-envelope"></i><br><u>PicStar@co.com</u><br><i class="fas fa-phone-alt"></i><br><u>+01111</u><br>Ayatallah Ashraf Ahmed Elmetwally<br><span class="diamond">&#9830;</span>Basmala Usama<span class="diamond">&#9830;</span> Lorem ipsum,<span class="diamond">&#9830;</span> dolor sit amet consectetur adipisicing elit.</p></footer>
@@ -75,5 +82,6 @@
         <br>
         <br>
         <div class="logo" style="display: none;"><i>P</i></div>-->
+        <script src="general.js"></script>
     </body>
 </html>
