@@ -220,6 +220,77 @@ html body .filter:has(> button#PB:focus) ~ div.post_story > div#dessert > img{
     align-items: center;
     justify-content: center;
 }
+/*loading animation*/
+#loading{
+    display: none;
+    position: absolute;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+#load{
+    display: inline;
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    border: 20px dotted black;
+    border-top: 20px dotted #6B3EF9;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    animation: progress 20s ease-in-out infinite;
+}
+@keyframes progress{
+    0%, 12.5%{
+        transform: rotate(1turn);
+    }
+    12.5%, 25%{
+        transform: rotate(2turn);
+        border-right: 20px dotted #B711ED;
+    }
+    25%, 37.5%{
+        transform: rotate(3turn);
+        border-bottom: 20px dotted #19816b;
+    }
+    37.5%, 50%{
+        transform: rotate(4turn);
+        border-left: 20px dotted #93C572;
+    }
+    50%, 62.5%{
+        transform: rotate(5turn);
+        border-top: transparent;
+    }
+    62.5%, 75%{
+        transform: rotate(6turn);
+        border-right: transparent;
+    }
+    75%, 87.5%{
+        transform: rotate(7turn);
+        border-bottom: transparent;
+    }
+    87.5%, 100%{
+        transform: rotate(8turn);
+        border-left: transparent;
+    }
+}
+#load i{
+    opacity: 0;
+    font-size: 150px;
+    animation: end 15s ease-in;
+    color: #6b088c;
+    position: relative;
+    top: 20%;
+    left: 25%;
+}
+@keyframes end{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 /*footer*/
 .sidefooter{
     top: 0px;
@@ -317,5 +388,8 @@ html body .filter:has(> button#PB:focus) ~ div.post_story > div#dessert > img{
     .filter{
         left: 0px;
         overflow-x: scroll;
+    }
+    #load{
+        left: 10%;
     }
 }
