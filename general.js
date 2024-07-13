@@ -38,7 +38,11 @@ function Select(ele){
 }
 function configure(){
     document.querySelector('.con').style.filter = "blur(50px)";
-    //animation
+    document.getElementById('loading').style.display = "block";
+    document.getElementById('loading').style.zIndex = "500";
+    setTimeout(function(){
+        location.replace('home.html');
+    }, 15000);
 }
 function cancel(){
     for (let index = 0; index < pics.length; index++) {
